@@ -11,14 +11,19 @@
   to {line-height: 400%;}
 }
 
+@keyframes fade {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
 /* Farve- og fontvariabler */
 :root {
   /* farver */
   --graa: #393939;
   --white: #ffffff;
   --orange: #f39458;
-  --groen: #99a812;
-  --roed: #a82112;
+  --blaa: #6bfff0;
+  --roed: #eb3b3b;
 
   /* fonte */
   --overskrift: 'Mulish', sans-serif;
@@ -127,6 +132,26 @@ footer ul {
   justify-content: center;
 }
 
+tr {
+  text-align: center;
+}
+
+.faellesspisning {
+  background-color: var(--orange);
+}
+
+.traening {
+  background-color: var(--blaa);
+}
+
+.staevne {
+  background-color: var(--roed);
+}
+
+#kalendermaaned {
+  color: var(--orange)
+}
+
 nav ul li,
 footer ul li {
   margin-right: 4ch;
@@ -137,6 +162,8 @@ footer ul li {
   line-height: 400%;
   color: var(--orange);
 }
+
+
 
 .mobmenu a {
   color: var(--orange);
@@ -158,12 +185,12 @@ footer {
 
 /* Sections (højde == skærmhøjde) */
 section {
-  background-color: var(--orange);
+  background-color: var(--graa);
 }
 
 /* Billeder */
-img {
-  width: 50%;
+nav img {
+  max-width: 50%;
 }
 
 #aaa {
@@ -176,9 +203,26 @@ img {
   text-align: center;
 }
 
+
 #tilmeld {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
+  padding-bottom: 5px;
+}
+
+.box, select {
+  float: right;
+}
+
+.tilmeldknap {
+  text-align: center;
+}
+
+
+#tilmeld img {
+  max-width: 100px;
 }
 
 .hjem a {
@@ -194,9 +238,57 @@ img {
   text-align: center;
 }
 
+#forsidetekst {
+  background-color: var(--graa);
+  color: var(--orange);
+  text-align: center;
+  text-align: justify;
+}
+
 footer {
   border-top: 1px solid var(--orange);
 }
+
+#gallerisection {
+  text-align: center;
+}
+
+#beskeder td {
+  border: solid 1px var(--orange);
+  color: black;
+  background-color: lightgrey;
+}
+
+#tilmelding {
+  color: var(--orange);
+  background-color: var(--graa);
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background-color: lightgrey;
+  color: black;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  animation-name: fade;
+  animation-duration: 0.6s;
+}
+
+.profilinfo {
+  background-color: var(--graa);
+  color: var(--orange);
+}
+
+.beskederoverskrift {
+  font-weight: 800;
+}
+
+#profilmain {
+  text-align: center;
+}
+
 
 /* MOBILE FIRST (via Flexbox) */
 
@@ -210,6 +302,17 @@ footer {
 nav {
   font-size: 200%;
 }
+
+img {
+  max-width: 300px;
+}
+
+#minprofil {
+  text-align: center;
+}
+
+
+
 
 
 @media only screen and (min-width: 381px) {

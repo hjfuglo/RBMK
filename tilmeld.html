@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>RBMK</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/blacklogo_icon.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<nav id="forsidenav">
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a href="mob-menu.html">☰</a>
+			</div>
+      <div id="login">
+       <a href="profilmenu.html"> <img src="images/user.png" alt="profil"> </a>
+      </div>
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+				<li><a href="kalender.html"> KALENDER </a></li>
+				<li><a href="galleri.html"> GALLERI </a></li>
+				<li><a href="holdplan.html"> HOLDPLAN </a></li>
+				<li><a href="tilmeld.html"> BLIV MEDLEM </a></li>
+				<li><a href="om.html"> OM RBMK </a></li>
+			</ul>
+
+		</nav>
+
+		<header>
+			<!-- site navn plus evt tagline og logo -->
+
+			<!-- ofte reserveres h1 til site-navn -->
+			<h1> TILMELDING</h1>
+			<p>
+			</p>
+		</header>
+
+		<!-- indhold -->
+		<main>
+			<!-- modul for en sektion -->
+			<section id="tilmelding">
+				<article>
+
+
+
+
+  <label for="fname">Fornavn:</label>
+  <input class="box" type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Efternavn:</label>
+  <input class="box" type="text" id="lname" name="lname"><br><br>
+  <label for="birthday">Fødselsdag:</label>
+<input class="box" type="date" id="birthday" name="birthday"><br><br>
+<label for="mail">E-mail:</label>
+<input class="box" type="text" id="mail" name="mail"><br><br>
+<label for="adress">Adresse:</label>
+<input class="box" type="text" id="adress" name="adress"><br><br>
+  <label for="hold">vælg hold:</label>
+  <select name="hold" id="hold">
+    <option value="kamp">Kampholdet</option>
+    <option value="motionteknik">Motion/Teknik-holdet</option>
+    <option value="teknik">Teknikholdet</option>
+    <option value="pige">Pigeholdet</option>
+  </select> <br><br>
+  <div class="tilmeldknap">
+  <input type="submit" value="Tilmeld" onclick="alert ('Tak fordi du tilmeldte dig')">
+  </div>
+
+
+
+				</article>
+			</section>
+
+			<!-- modul: en ny sektion -->
+			<section id="forsidetekst">
+				<article>
+					<figure>
+					</figure>
+
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+		<footer>
+			&copy; Multimusen Design Worldwide, 2021
+		</footer>
+
+	</div><!-- /wrap -->
+</body>
+</html>

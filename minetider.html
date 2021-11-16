@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>RBMK</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/blacklogo_icon.png" />
+</head>
+
+<body>
+
+	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
+	<div id="wrap">
+
+		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
+		<nav id="forsidenav">
+			<!-- enkel burger-menu -->
+			<div id="showMenu">
+				<a href="mob-menu.html">☰</a>
+			</div>
+      <div id="login">
+       <a href="profilmenu.html"> <img src="images/user.png" alt="profil"> </a>
+      </div>
+			<!-- Menuer laves som regel i form af uordnede lister.
+					 Listerne kan styles så de går vandret eller lodret -->
+			<ul id="menu">
+				<li><a href="kalender.html"> KALENDER </a></li>
+				<li><a href="galleri.html"> GALLERI </a></li>
+				<li><a href="holdplan.html"> HOLDPLAN </a></li>
+				<li><a href="tilmeld.html"> BLIV MEDLEM </a></li>
+				<li><a href="om.html"> OM RBMK </a></li>
+			</ul>
+
+		</nav>
+
+		<header>
+
+		</header>
+
+		<!-- indhold -->
+		<main>
+			<!-- modul for en sektion -->
+      <body>
+          <!-- Here we are using attributes like
+              cellspacing and cellpadding -->
+
+          <!-- The purpose of the cellpadding is
+              the space that a user want between
+              the border of cell and its contents-->
+
+          <!-- cellspacing is used to specify the
+              space between the cell and its contents -->
+          <h2 id="kalendermaaned">
+              November 2021
+          </h2>
+          <br />
+
+          <table bgcolor="lightgrey" align="center"
+              cellspacing="6" cellpadding="6">
+
+              <!-- The tr tag is used to enter
+                  rows in the table -->
+
+              <!-- It is used to give the heading to the
+                  table. We can give the heading to the
+                  top and bottom of the table -->
+
+              <caption align="top">
+                  <!-- Here we have used the attribute
+                      that is style and we have colored
+                      the sentence to make it better
+                      depending on the web page-->
+              </caption>
+
+              <!-- Here th stands for the heading of the
+                  table that comes in the first row-->
+
+              <!-- The text in this table header tag will
+                  appear as bold and is center aligned-->
+
+              <thead>
+                  <tr>
+                      <!-- Here we have applied inline style
+                           to make it more attractive-->
+                      <th>Man</th>
+                      <th>Tir</th>
+                      <th>Ons</th>
+                      <th>Tor</th>
+                      <th>Fre</th>
+                      <th>Lør</th>
+                      <th>Søn</th>
+                  </tr>
+              </thead>
+
+              <tbody>
+                  <tr>
+                      <td class="traening">1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                      <td>8</td>
+                      <td class="traening">9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                      <td>13</td>
+                      <td>14</td>
+                  </tr>
+                  <tr>
+                      <td>15</td>
+                      <td class="traening">16</td>
+                      <td>17</td>
+                      <td>18</td>
+                      <td>19</td>
+                      <td class="staevne">20</td>
+                      <td>21</td>
+                  </tr>
+                  <tr>
+                      <td>22</td>
+                      <td>23</td>
+                      <td class="traening">24</td>
+                      <td>25</td>
+                      <td>26</td>
+                      <td>27</td>
+                      <td>28</td>
+                  </tr>
+                  <tr>
+                      <td>29</td>
+                      <td>30</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+
+              </tbody>
+          </table>
+      </body>
+
+
+		</main>
+
+		<!-- typisk kontaktinformationer -->
+		<footer>
+			&copy; Multimusen Design Worldwide, 2021
+		</footer>
+
+	</div><!-- /wrap -->
+</body>
+</html>
