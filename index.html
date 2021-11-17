@@ -25,6 +25,10 @@
 	<!-- "Wrapperen" holder sammen på dit design, fx hvis det skal centreres eller lign. -->
 	<div id="wrap">
 
+		<div class="hjemknap">
+			<a href="index.html"> <img src="images/logo_orange.png" alt="hjem knap"> </a>
+		</div>
+
 		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
 		<nav id="forsidenav">
 			<!-- enkel burger-menu -->
@@ -34,14 +38,15 @@
       <div id="login">
        <a href="profilmenu.html"> <img src="images/user.png" alt="profil"> </a>
       </div>
+
 			<!-- Menuer laves som regel i form af uordnede lister.
 					 Listerne kan styles så de går vandret eller lodret -->
 			<ul id="menu">
-				<li><a href="kalender.html"> KALENDER </a></li>
-				<li><a href="galleri.html"> GALLERI </a></li>
-				<li><a href="holdplan.html"> HOLDPLAN </a></li>
-				<li><a href="tilmeld.html"> BLIV MEDLEM </a></li>
-				<li><a href="om.html"> OM RBMK </a></li>
+				<li class="menupunkter"><a href="kalender.html"> KALENDER </a></li>
+				<li class="menupunkter"><a href="galleri.html"> GALLERI </a></li>
+				<li class="menupunkter"><a href="holdplan.html"> HOLDPLAN </a></li>
+				<li class="menupunkter"><a href="tilmeld.html"> BLIV MEDLEM </a></li>
+				<li class="menupunkter1"><a href="om.html"> OM RBMK </a></li>
 			</ul>
 
 		</nav>
@@ -50,7 +55,7 @@
 			<!-- site navn plus evt tagline og logo -->
 
 			<!-- ofte reserveres h1 til site-navn -->
-			<h1> VELKOMMEN... </h1>
+			<h1 id="mobilforsideheader"> VELKOMMEN... </h1>
 			<p>
 			</p>
 		</header>
@@ -77,13 +82,45 @@
 					</figure>
 
 					<h2></h2>
-					<p>
+					<p id="mobilforsidetekst">
 						...til Randers Bokse – og motionsklub - et rart sted,
 hvor du vil blive grebet af den gode stemning, og få pulsen
 i vejret sammen med alle os andre, børn, unge og voksne. Her hos os er der plads til alle - ung som gammel, høj som lav,
 Vi sætter fokus på fællesskab, sjov og træning. Kom og vær med!
 					</p>
 
+					<div class="forsideflex">
+
+
+<div class="forsidebillede1">
+ <img src="images/forsidebillede1.jpg" alt="billede fra træning">
+</div>
+
+					<p class="desktopforsidetekst1">
+						Velkommen til Randers Bokse – og motionsklub - et rart sted,
+hvor du vil blive grebet af den gode stemning, og få pulsen
+i vejret sammen med alle os andre, børn, unge og voksne.
+</p>
+
+
+<p class="desktopforsidetekst2">
+	Her hos os er der plads til alle - ung som gammel, høj som lav,
+	Vi sætter fokus på fællesskab, sjov og træning. Kom og vær med!
+</p>
+
+<div class="forsidebillede2">
+<img src="images/faellesskab.jpg" alt="fællesskab">
+</div>
+
+	</div>
+
+<br><br>
+
+	<div id="tilmeld1">
+		<a href="tilmeld.html">
+		<img src="images/tilmeld_knap.png" alt="tilmeld dig her">
+		</a>
+	</div>
 
 		</main>
 

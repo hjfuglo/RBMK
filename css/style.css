@@ -35,11 +35,27 @@
 
 
 #forsidenav {
-  height: 250px;
-  background-image: url(../images/logo_orange.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 220px;
+}
+
+
+#indstillingersection {
+  font-family: var(--overskrift);
+  color: var(--orange);
+  font-size: 24pt;
+  line-height: 2;
+}
+
+.indstillinger {
+  border-bottom: 1px solid var(--orange);
+}
+
+.indstillinger1 {
+  color: red;
+}
+
+#holdplansection {
+  color: var(--orange);
 }
 
 #showMenu {
@@ -94,7 +110,6 @@ p {
   margin-right: var(--whitespace);
   padding-bottom: var(--whitespace);
   font-size: 1.2em;
-  max-width: 35ch; /* undgå lange ulæselige linjer */
 }
 
 figcaption {
@@ -193,15 +208,6 @@ nav img {
   max-width: 50%;
 }
 
-#aaa {
-  background-image: url(../images/bigphoto.jpg);
-  background-size: 100%;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  text-align: center;
-}
 
 
 #tilmeld {
@@ -241,7 +247,6 @@ nav img {
 #forsidetekst {
   background-color: var(--graa);
   color: var(--orange);
-  text-align: center;
   text-align: justify;
 }
 
@@ -285,15 +290,17 @@ footer {
   font-weight: 800;
 }
 
-#profilmain {
+
+#menu {
   text-align: center;
+  margin-left: 60px;
 }
 
 
 /* MOBILE FIRST (via Flexbox) */
 
 /* 1. Mobile enheder (begynd her) */
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
 
 #menu {
   display: none;
@@ -303,20 +310,57 @@ nav {
   font-size: 200%;
 }
 
-img {
-  max-width: 300px;
+.hjemknap {
+position: absolute;
+top: 8%;
+padding-right: 8px;
 }
+
+.hjemknap img {
+  max-width: 100%;
+}
+
+
 
 #minprofil {
   text-align: center;
 }
 
+.profilbillede img {
+  max-width: 200px;
+}
+
+#galleribilleder img {
+  max-width: 300px;
+}
+
+#aaa {
+  background-image: url(../images/bigphoto.jpg);
+  background-size: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.forsideflex {
+  display: none;
+}
+
+#tilmeld1 {
+  display: none;
+}
 
 
 
 
-@media only screen and (min-width: 381px) {
+}
+
+
+@media only screen and (min-width: 401px) {
   /* Vælg en anden baggrundsfarve til tablets */
+
 
   /* Flexbox: design efter skitser */
 
@@ -360,7 +404,114 @@ img {
 }
 
 /* 3. Stor skærm (slut her) */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 1050px) {
+
+  #forsidenav {
+    height: 350px;
+  }
+
+  .hjemknap {
+  position: absolute;
+  top: 12%;
+  text-align: center;
+  width: 100%;
+  }
+
+  .hjemknap img{
+    max-width: 600px;
+  }
+
+#showMenu {
+  display: none;
+
+}
+
+.menupunkter a {
+border-right: 1px solid var(--orange);
+padding-right: 45px;
+
+}
+
+#mobilforsideheader {
+  display: none;
+}
+
+#mobilforsidetekst {
+  display: none;
+}
+
+.forsideflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.forsideflex img {
+  max-width: 300px;
+}
+
+.desktopforsidetekst1 {
+  max-width: 35ch;
+  padding-top: 10%;
+}
+
+.desktopforsidetekst2 {
+  max-width: 35ch;
+  padding-top: 10%;
+}
+
+#forsidetekst {
+  max-width: 75%;
+  padding-left: 12.5%;
+}
+
+#tilmeld {
+  display: none;
+}
+
+#tilmeld1 {
+  text-align: center;
+}
+
+#galleribilleder img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+#galleribilleder {
+ display: flex;
+ flex-wrap: wrap;
+ grid-gap: 30px;
+ align-items: center;
+ justify-content: space-around;
+}
+
+#tilmelding {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#profilmain {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.profilbillede {
+  float: left;
+}
+
+.profilbillede img {
+  width: 200px;
+}
+
+.profilinfo {
+  float: right;
+}
+
+#bbbprofil {
+  height: 250px;
+  text-align: right;
+}
   /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
 
   /* 3.B.: Skjul burgeren */
