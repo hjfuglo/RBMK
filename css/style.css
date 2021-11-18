@@ -24,6 +24,7 @@
   --orange: #f39458;
   --blaa: #6bfff0;
   --roed: #eb3b3b;
+  --lysegraa: #737373;
 
   /* fonte */
   --overskrift: 'Mulish', sans-serif;
@@ -48,9 +49,19 @@
 
 .indstillinger {
   border-bottom: 1px solid var(--orange);
+  color: var(--orange);
+  text
+}
+
+.indstillinger a {
+  color: var(--orange);
 }
 
 .indstillinger1 {
+  color: red;
+}
+
+.indstillinger1 a {
   color: red;
 }
 
@@ -96,10 +107,17 @@ h1 {
 }
 
 /* Typografisk */
-h2,
+h2 {
+  font-family: var(--overskrift);
+  font-size: 1.2em;
+  text-align: left;
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
 h3 {
   font-family: var(--overskrift);
-  font-size: 2.2em;
+  font-size: 1.2em;
   text-align: center;
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
@@ -296,6 +314,12 @@ footer {
   margin-left: 60px;
 }
 
+.kalendermain {
+  height: 350px;
+}
+
+
+
 
 /* MOBILE FIRST (via Flexbox) */
 
@@ -350,6 +374,14 @@ padding-right: 8px;
 
 #tilmeld1 {
   display: none;
+}
+
+#indstillingersection a {
+  text-decoration: none;
+}
+
+#indstillingersection div:hover {
+  background-color: var(--lysegraa);
 }
 
 
@@ -414,7 +446,7 @@ padding-right: 8px;
   position: absolute;
   top: 12%;
   text-align: center;
-  width: 100%;
+  width: 99%;
   }
 
   .hjemknap img{
@@ -512,6 +544,49 @@ padding-right: 45px;
   height: 250px;
   text-align: right;
 }
+
+#om {
+  max-width: 40%;
+  padding-left: 10%;
+  color: var(--orange);
+  float: left;
+}
+
+#omsection {
+  float: right;
+  max-width: 40%;
+  color: var(--orange);
+  padding-right: 10%;
+  text-align: center;
+
+}
+
+#omsection img {
+  max-width: 35%;
+}
+
+#ommain {
+  height: 650px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#indstillingersection {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+#indstillingersection a {
+  text-decoration: none;
+}
+
+#indstillingersection div:hover {
+  background-color: var(--lysegraa);
+}
+
   /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
 
   /* 3.B.: Skjul burgeren */
