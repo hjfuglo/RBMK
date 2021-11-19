@@ -25,6 +25,7 @@
   --blaa: #6bfff0;
   --roed: #eb3b3b;
   --lysegraa: #737373;
+  --hover: #ffe8b8;
 
   /* fonte */
   --overskrift: 'Mulish', sans-serif;
@@ -67,6 +68,11 @@
 
 #holdplansection {
   color: var(--orange);
+  padding-bottom: 5%;
+}
+
+#holdplansection p {
+  text-align: center;
 }
 
 #showMenu {
@@ -91,6 +97,17 @@ h1 {
 }
 
 #login a {
+  color: var(--orange);
+}
+
+#logindrop {
+  padding-right: 8px;
+  float: right;
+  width: 40px;
+  padding-top: 8px;
+}
+
+#logindrop a {
   color: var(--orange);
 }
 
@@ -152,12 +169,12 @@ header {
 }
 
 /* Navigation and footer */
-footer {
-  background-color: var(--dark);
-  padding: 35px 0;
+.copyright {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  font-size: 8pt;
 }
+
 
 nav ul,
 footer ul {
@@ -182,7 +199,8 @@ tr {
 }
 
 #kalendermaaned {
-  color: var(--orange)
+  color: var(--orange);
+  text-align: center;
 }
 
 nav ul li,
@@ -314,9 +332,76 @@ footer {
   margin-left: 60px;
 }
 
-.kalendermain {
-  height: 350px;
+
+
+#om, #omsection {
+  color: var(--orange);
 }
+
+.traeningfarve {
+  background-color: var(--blaa);
+  text-align: center;
+}
+
+.faellesspisningfarve {
+  background-color: var(--orange);
+  text-align: center;
+}
+
+.staevnefarve {
+  background-color: var(--roed);
+  text-align: center;
+}
+
+#menu a:hover {
+  color: var(--hover);
+}
+
+.nuvaerendeside {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
+}
+
+
+
+.kontaktinfo {
+  display: flex;
+  font-size: 8pt;
+  justify-content: space-between;
+}
+
+.socials {
+  margin-top: 80px;;
+  margin-right: 8%;
+  text-decoration: none;
+}
+
+.socials img {
+  max-width: 30px;
+}
+
+.socials a {
+  margin-left: 8px;
+  margin-right: 8px;
+
+}
+
+.footertext {
+  text-align: left;
+}
+
+.map {
+  text-align: center;
+}
+
+#forsidemain {
+  padding-bottom: 25px;
+}
+
+
+
+
 
 
 
@@ -324,7 +409,7 @@ footer {
 /* MOBILE FIRST (via Flexbox) */
 
 /* 1. Mobile enheder (begynd her) */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
 #menu {
   display: none;
@@ -359,7 +444,7 @@ padding-right: 8px;
 }
 
 #aaa {
-  background-image: url(../images/bigphoto.jpg);
+  background-image: url(../images/forsidebillede1.jpg);
   background-size: 100%;
   height: 250px;
   background-repeat: no-repeat;
@@ -384,13 +469,199 @@ padding-right: 8px;
   background-color: var(--lysegraa);
 }
 
+.profilinfo {
+  text-align: center;
+}
+
+.kalendermain {
+  height: 410px;
+}
+
+#forsidetekst img {
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+
+
 
 
 
 }
 
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 451px) {
+
+  #menu {
+    font-size: 10pt;
+  }
+
+  nav {
+    font-size: 200%;
+  }
+
+  .hjemknap {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+  }
+
+  .hjemknap img {
+    max-width: 350px;
+  }
+
+
+
+  #minprofil {
+    text-align: center;
+  }
+
+  .profilbillede img {
+    max-width: 200px;
+  }
+
+  #galleribilleder img {
+    max-width: 300px;
+  }
+
+  #aaa {
+    background-image: url(../images/forsidebillede1.jpg);
+    background-size: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .forsideflex {
+    display: none;
+  }
+
+  #tilmeld1 {
+    display: none;
+  }
+
+  #indstillingersection a {
+    text-decoration: none;
+  }
+
+  #indstillingersection div:hover {
+    background-color: var(--lysegraa);
+  }
+
+  .profilinfo {
+    text-align: center;
+  }
+
+  .kalendermain {
+    height: 410px;
+  }
+
+  #forsidetekst img {
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  #showMenu {
+    display: none;
+  }
+
+  #galleribilleder {
+   display: flex;
+   flex-wrap: wrap;
+   grid-gap: 30px;
+   align-items: center;
+   justify-content: space-around;
+  }
+
+  #forsidemain {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .menupunkter a {
+  border-right: 1px solid var(--orange);
+  padding-right: 20px;
+  }
+
+  table th, table td {
+    padding: 20px;
+  }
+
+  .kalendermain {
+    height: 600px;
+  }
+
+  .traeningfarve {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .faellesspisningfarve {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .staevnefarve {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  #tilmelding {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  #om {
+    max-width: 40%;
+    padding-left: 10%;
+    float: left;
+  }
+
+  #omsection {
+    float: right;
+    max-width: 40%;
+    padding-right: 10%;
+    text-align: center;
+
+  }
+
+  #omsection img {
+    max-width: 35%;
+  }
+
+  #ommain {
+    height: 800px;
+  }
+
+  #indstillingersection {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+  }
+
+  #indstillingersection a {
+    text-decoration: none;
+  }
+
+  #indstillingersection div:hover {
+    background-color: var(--lysegraa);
+  }
+
+
+
+
+
+
+
   /* Vælg en anden baggrundsfarve til tablets */
 
 
@@ -438,6 +709,10 @@ padding-right: 8px;
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 1050px) {
 
+  #menu {
+    font-size: 14pt;
+  }
+
   #forsidenav {
     height: 350px;
   }
@@ -461,8 +736,9 @@ padding-right: 8px;
 .menupunkter a {
 border-right: 1px solid var(--orange);
 padding-right: 45px;
-
 }
+
+
 
 #mobilforsideheader {
   display: none;
@@ -478,7 +754,7 @@ padding-right: 45px;
   justify-content: space-between;
 }
 
-.forsideflex img {
+#forsidetekst img {
   max-width: 300px;
 }
 
@@ -548,14 +824,12 @@ padding-right: 45px;
 #om {
   max-width: 40%;
   padding-left: 10%;
-  color: var(--orange);
   float: left;
 }
 
 #omsection {
   float: right;
   max-width: 40%;
-  color: var(--orange);
   padding-right: 10%;
   text-align: center;
 
@@ -586,6 +860,55 @@ h1 {
 #indstillingersection div:hover {
   background-color: var(--lysegraa);
 }
+
+.traeningfarve {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.faellesspisningfarve {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.staevnefarve {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+table th, table td {
+  padding: 20px;
+}
+
+.kalendermain {
+  height: 600px;
+}
+
+.mobforsidebillede2 {
+  display: none;
+}
+
+#mobilforsidetekst1 {
+  display: none;
+}
+
+#mobilforsidetekst2 {
+  display: none;
+}
+
+.mobmenu {
+  font-size: 24pt;
+}
+
+#aaa {
+  display: none;
+}
+
+#forsidemain {
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
 
   /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
 
