@@ -2,9 +2,9 @@
  * fil: css/style.css
  **/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&display=swap');
-/* Reset: Meyer Style */
-/* fjerner default browser styles */
-@import 'reset.css';
+
+
+
 
 @keyframes animation {
   from {line-height: 0%;}
@@ -203,8 +203,7 @@ tr {
   text-align: center;
 }
 
-nav ul li,
-footer ul li {
+nav ul li {
   margin-right: 4ch;
   list-style: none;
   text-align: center;
@@ -220,6 +219,10 @@ footer ul li {
   color: var(--orange);
   text-align: center;
   padding-left: 1.5rem;
+}
+
+.mobmenu ul {
+  display: block;
 }
 
 nav a,
@@ -730,7 +733,6 @@ iframe {
 
 #showMenu {
   display: none;
-
 }
 
 .menupunkter a {
@@ -908,6 +910,7 @@ table th, table td {
   margin-left: 0%;
   margin-right: 0%;
 }
+
 
 
   /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
